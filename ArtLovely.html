@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Art Portfolio Site</title>
+    <link type="text/css" href="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/ArtLovely.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet" />
+    <script src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/ArtLovely.js"></script>
+</head>
+
+<!......*Header*......>
+<header>
+    <div class="center">
+        <h1 class="cursive">ART LOVELY</h1>
+        <div class="subtitle">Traditional sketch art by MiKayla Maxner</div>
+    </div>
+</header>
+
+<!......*Navbar*......>
+<nav>
+    <div id="Navigation" class="navbar center">
+        <a id="PortfolioNav" href="#Portfolio" class="active" onclick="changeActiveNav(this.id)">Portfolio</a>
+        <span class="vertical-line"></span>
+        <a id="AboutMeNav" href="#AboutMe" onclick="changeActiveNav(this.id)">About Me</a>
+        <span class="vertical-line"></span>
+        <a id="ContactNav" href="#Contact" onclick="changeActiveNav(this.id)">Contact</a>
+    </div>
+</nav>
+
+<!......*Portfolio*......>
+
+<body>
+    <div id="Portfolio" class="center">
+        <div class="row">
+            <div class="column">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/damon.JPG">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/tyler.JPG">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/deer.PNG">
+            </div>
+            <div class="column">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/eye.jpeg">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/lion.JPG">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/elena.JPG">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/stefan.JPG">
+            </div>
+            <div class="column">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/tiger.PNG">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/enzo.JPG">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/caroline.JPG">
+            </div>
+            <div class="column">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/bonnie.JPG">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/drawingrequest.jpeg">
+                <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/ramtattoo.jpeg">
+            </div>
+        </div>
+    </div>
+
+    <!.....*About Me*......>
+    <div id="AboutMe" class="section">
+        <div class="section-top">
+            <h2>The artist</h2>
+        </div>
+        <div class="section-left">
+            <p>My name is MiKayla Maxner. I grew up in Dickinson, North Dakota and Rapid City, South Dakota. Art has always been a natural talent of mine; specifically, drawing is where I excelled over the years. All of my portraits are made with graphite and charcoal; with this medium I focus and take pride in making my drawings look as realistic as possible. Using faces as my subject allows me to reach that goal while showing my full potential. I'm currently using this skill to become a freelance sketch artist. If you're interested in a portrait of your own, you can send me a drawing request through my Contact page.</p>
+        </div>
+        <div class="section-right right">
+            <img src="externalfile:drive-670f347c32dc99d6a0ef0edefdd02103d432d6d8/root/Web Design/Art Portfolio/Images/aboutmepic - Edited.jpg">
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+
+    <!.....*Contact*......>
+    <div id="Contact" class="container">
+        <form action="action_page.php">
+            <h2>Get in touch</h2>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your first name...">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" placeholder="Your drawing request..." style="height:200px"></textarea>
+            <input type="send" value="Send" style="height:35px">
+        </form>
+    </div>
+
+</body>
+
+</html>

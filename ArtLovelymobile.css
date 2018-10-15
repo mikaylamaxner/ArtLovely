@@ -1,0 +1,489 @@
+body
+{
+    background-image: url("pattern.png");
+    background-attachment: fixed;
+    font-family: 'Give You Glory', serif;
+    margin: 0;
+    padding-bottom: 600px;
+    width: 100%;
+}
+
+/*...............................................| Header |..................................................*/
+header
+{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    text-align: center;
+    width: 100%;
+}
+
+h1
+{
+    font-weight: normal;
+    margin: 0;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.3)
+}
+
+.cursive
+{
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 7.75em;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.subtitle
+{
+    font-size: 1.75em;
+    padding-bottom: .75em;
+}
+
+
+/*...............................................| Navbar |..................................................*/
+.navbar
+{
+    background-color: rgba(00, 00, 00, 0.6);
+    font-family: 'Amatic SC', sans-serif;
+    margin: 0;
+    padding-top: .65em;
+    padding-bottom: .65em;
+    width: 100%;
+    z-index: 2;
+}
+
+.center
+{
+    text-align: center;
+}
+
+a
+{
+    color: #FFFFFF;
+    font-size: 2em;
+    padding: 1.25em;
+    text-decoration: none;
+}
+
+.active
+{
+    color: #fbc2eb;
+}
+
+a:hover
+{
+    color: #fbc2eb;
+}
+
+.vertical-line
+{
+    background-color: #FFFFFF;
+    display: inline-block;
+    height: 1.5em;
+    width: 1px;
+}
+
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav
+{
+    height: 60px;
+    z-index: 2;
+}
+
+
+/*...............................................| Portfolio |..................................................*/
+.row
+{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4em;
+    z-index: 3;
+}
+
+.column
+{
+    flex: 25%;
+    max-width: 100%;
+    padding: .55em;
+}
+
+.column img
+{
+    border: 5px solid #a18cd1;
+    margin-top: .5em;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.column img:hover
+{
+    transform: scale(1.3);
+}
+
+
+/*...............................................| About Me |..................................................*/
+.section
+{
+    background-color: rgba(161, 140, 209, 0.6);
+    padding-top: 50px;
+    margin-top: .75em;
+    width: 100%;
+}
+
+.section-top
+{
+	float: none;
+    margin: 0;
+}
+
+.section-left
+{
+    float: left;
+    width: 48%;
+}
+
+.section-right
+{
+    float: right;
+    width: 42%;
+}
+
+.section p
+{
+    padding-left: 4.2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 2.75em;
+    margin: 0;
+    font-size: 24px;
+    width: 100%;
+}
+
+.section img
+{
+    border: .5em solid #fbc2eb;
+    margin-top: 1.75em;
+    margin-bottom: 2.25em;
+    width: 77%;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.section h2
+{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3.25em;
+    padding-left: 1.85em;
+    padding-right: 0;
+    padding-top: .5em;
+    margin: 0;
+}
+
+
+/*...............................................| Contact |..................................................*/
+.container
+{
+    background-color: rgba(161, 140, 209, 0.6);
+    padding: 2em;
+    margin-top: 4em;
+    width: 95%;
+}
+
+.container h2
+{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3.25em;
+    padding-top: 50px;
+    padding-bottom: .65em;
+    margin: 0;
+}
+
+input[type=text], select, textarea
+{
+    width: 100%;
+    padding: 1em;
+    border: 3px solid #fbc2eb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 38px;
+    font-size: 15px;
+}
+
+input[type=send]
+{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    padding: 7px;
+    width: 10%;
+    margin-bottom: .5em;
+    border: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 24px;
+}
+
+input[type=send]:hover
+{
+    background: #fbc2eb;
+}
+
+form
+{
+    width: 72%;
+    margin-left: 10em;
+}
+
+label
+{
+     font-size: 24px;
+}
+
+
+
+
+          /* | MOBILE SIZING | */
+/*...............................................| Header |..................................................*/
+@media screen and (max-device-width: 1200px)
+{
+    header
+    {
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        text-align: center;
+        width: 100%;
+    }
+    h1
+    {
+        font-weight: normal;
+        margin: 0;
+        text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.3);
+    }
+    .cursive
+    {
+        font-family: 'Londrina Shadow', cursive;
+        font-size: 12.85em;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .subtitle
+	{
+    	font-size: 47px;
+        padding-bottom: .65em;
+	}
+}
+
+
+          /* | MOBILE SIZING | */
+/*...............................................| Navbar |..................................................*/
+@media screen and (max-device-width: 1200px)
+{
+    .navbar
+    {
+        background-color: rgba(00, 00, 00, 0.6);
+        font-family: 'Amatic SC', sans-serif;
+        margin: 0;
+        padding-bottom: 1.45em;
+        padding-top: 1.45em;
+        width: 100%;
+    }
+    .center
+    {
+        text-align: center;
+    }
+    a
+    {
+        color: #FFFFFF;
+        font-size: 65px;
+        padding: 1em;
+        text-decoration: none;
+    }
+    .active
+    {
+        color: #fbc2eb;
+    }
+    a:hover
+    {
+        color: #fbc2eb;
+    }
+    .vertical-line
+    {
+        background-color: #FFFFFF;
+        display: inline-block;
+        height: 2.5em;
+        width: 2px;
+    }
+    .sticky
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    nav
+    {
+        height: 60px;
+	}
+}
+
+          /* | MOBILE SIZING | */
+/*...............................................| Portfolio |..................................................*/
+@media screen and (max-device-width: 1200px)
+{
+    .row
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4em;
+    }
+    .column
+    {
+        flex: 100%;
+        max-width: 97%;
+        padding: .55em;
+    }
+    .column img
+    {
+        border: 15px solid #a18cd1;
+        margin-top: 5em;
+        max-width: 97%;
+        vertical-align: middle;
+    }
+    .column img:hover
+    {
+        transform: none;
+    }
+}
+
+          /* | MOBILE SIZING | */
+/*...............................................| About Me |..................................................*/
+@media screen and (max-device-width: 1200px)
+{
+    .section
+    {
+        background-color: rgba(161, 140, 209, 0.6);
+        margin-top: 3em;
+        width: 100%;
+    }
+    .section-top
+    {
+        float: none;
+        margin: 0;
+    }
+    .section-left
+    {
+        float: none;
+        width: 82%;
+        margin: 0;
+    }
+    .section-right
+    {
+        float: none;
+        width: 77%;
+        margin: 0;
+    }
+    .section p
+    {
+        padding-bottom: 1.25em;
+        padding-left: 2.15em;
+        padding-right: 0;
+        font-size: 42px;
+    }
+    .section img
+    {
+        border: .75em solid #fbc2eb;
+        margin-top: 0;
+        margin-bottom: 4.5em;
+        margin-left: 10.65em;
+    }
+    .clear
+    {
+        clear: both;
+    }
+    .section h2
+    {
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 6em;
+        padding-left: 3.65em;
+        padding-right: 0;
+        padding-top: 1.5em;
+    }
+    
+}
+
+          /* | MOBILE SIZING | */
+/*...............................................| Contact |..................................................*/
+@media screen and (max-device-width: 1200px)
+{
+    .container
+    {
+        margin-top: 6em;
+        background-color: rgba(161, 140, 209, 0.6);
+        padding: 2em;
+        width: 93.5%;
+    }
+    .container h2
+    {
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 6em;
+        padding-left: 1.75em;
+        padding-right: 0;
+        padding-top: 1.5em;
+        padding-bottom: .65em;
+        margin: 0;
+    }
+    input[type=text], select, textarea
+    {
+        width: 100%;
+        padding: 1em;
+        border: 6px solid #fbc2eb;
+        -webkit-border-radius: 14px;
+    	border-radius: 14px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 80px;
+        font-size: 28px;
+    }
+    input[type=send]
+    {
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        padding: 20px;
+        margin-bottom: 1.75em;
+        width: 15%;
+        border: none;
+        -webkit-border-radius: 10px;
+    	border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 42px;
+    }
+    input[type=send]:hover
+    {
+        background: #fbc2eb;
+    }
+    form
+    {
+    	width: 77%;
+        margin-left: 6.65em;
+    }
+    label
+    {
+    	font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
